@@ -1,0 +1,95 @@
+.name {
+  position: absolute;
+  height: 150px;
+  width: 350px;
+  top: 5px;
+  left: 650px;
+  font-family: 'Microsoft Sans Serif';
+  transition: left .2s ease, width .2s ease, top .2s ease;
+  &_hidden {
+    width: 0;
+    overflow: hidden;
+    left: -400px;
+    top: calc(100% + 400px);
+  }
+  &__notepad {
+    border: 3px solid #3d72d1;
+    border-radius: 4px;
+  }
+
+  &__notepad-panel {
+    height: 25px;
+    background: -webkit-linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    background: -o-linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    background: linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__notepad-text {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  &__notepad-navigation-list {
+    display: flex;
+    height: 20px;
+    background-color: #fdfdff;
+  }
+
+  &__notepad-navigation-item {
+    margin-right: 10px;
+    margin-left: 5px;
+    &:hover {
+      border: 1px solid gray;
+    }
+  }
+
+  &__notepad-navigation-link {
+    font-family: 'Microsoft Sans Serif';
+    color: black;
+    font-size: 12px;
+  }
+
+  &__notepad-status-img {
+    width: 15px;
+  }
+
+  &__notepad-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+  }
+
+  &__notepad-collapse {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/collapse-btn.png") no-repeat;
+    border: none;
+  }
+
+  &__notepad-expand {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/expand-btn.png") no-repeat;
+    border: none;
+  }
+
+  &__notepad-close {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/close-btn.png") no-repeat;
+    border: none;
+  }
+  &__notepad-info {
+    background: url("../../assets/img/notepad-face.jpg");
+    height: 100px;
+    padding-top: 3px;
+  }
+  
+  &__notepad-info-text {
+    text-transform: uppercase;
+  }
+}

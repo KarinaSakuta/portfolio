@@ -1,0 +1,115 @@
+.projects {
+  position: absolute;
+  width: 600px;
+  height: 300px;
+  top: 71%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border: 3px solid #3d72d1;
+  border-radius: 4px;
+  transition: left .2s ease, width .2s ease, top .2s ease;
+  font-family: 'Microsoft Sans Serif';
+  &_hidden {
+    width: 0;
+    overflow: hidden;
+    left: -400px;
+    top: calc(100% + 400px);
+  }
+  &__slider {
+    position: relative;
+    background: -webkit-linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    background: -o-linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    background: linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+  }
+
+  &__show {
+    margin: 0 auto;
+    width: 594px;
+    height: 269px;
+    background-color: white;
+    background-size: cover;
+  }
+
+  &__notepad_collapse {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/collapse-btn.png") no-repeat;
+    border: none;
+  }
+
+  &__notepad_expand {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/expand-btn.png") no-repeat;
+    border: none;
+  }
+
+  &__notepad_close {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/close-btn.png") no-repeat;
+    border: none;
+  }
+
+  &__description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 350px;
+    height: 25px;
+    background: linear-gradient(#3485d6 3%, #2475ff 6%, #3164db 17%, #0076ff 99%, #358cec 8%);
+    color: white;
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  &__slider-button {
+    position: absolute;
+    top: 40px;
+    width: 25px;
+    height: 25px;
+    font: 12pt arial,tahoma,sans-serif;
+    text-align: center;
+
+    &_left {
+      margin: auto 0;
+      left: 5px;
+      top: 0;
+      bottom: 0;
+    }
+
+    &_right{
+      margin: auto 0;
+      right: 5px;
+      top: 0;
+      bottom: 0;
+    }
+  }
+
+  &__notepad-panel {
+    height: 25px;
+    background: -webkit-linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    background: -o-linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    background: linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__notepad-text {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  &__notepad-status-img {
+    width: 15px;
+  }
+
+  &__notepad-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+  }
+}

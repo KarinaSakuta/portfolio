@@ -1,0 +1,147 @@
+.education {
+  position: absolute;
+  font-family: 'Microsoft Sans Serif';
+  top: 36%;
+  left: 68%;
+  transform: translate(-50%, -50%);
+  right: 0;
+  width: 351px;
+  height: 185px;
+  transition: left .2s ease, width .2s ease, top .2s ease;
+  &_hidden {
+    width: 0;
+    overflow: hidden;
+    left: -400px;
+    top: calc(100% + 400px);
+  }
+  &__container {
+    margin: 20px auto 0;
+    max-width: 800px;
+    border: 3px solid #3d72d1;
+    border-radius: 4px;
+  }
+
+  &__run-panel {
+    height: 25px;
+    background: linear-gradient(#499bed 3%, #5388e2 6%, #3164db 17%, #0076ff 91%, #3135b2 52%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__run-text {
+    color: white;
+    font-size: 12px;
+    letter-spacing: 0.3px;
+  }
+
+  &__run-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+  }
+
+  &__run-ask {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/question-btn.png") no-repeat;
+    border: none;
+  }
+
+  &__run-close {
+    margin: 0 1px;
+    width: 21px;
+    background: url("../../assets/img/close-btn.png") no-repeat;
+    border: none;
+  }
+
+  &__run {
+    background-color: #ece9d8;
+    padding-top: 16px;
+    padding-left: 7px;
+    padding-bottom: 16px;
+  }
+
+  &__run-type {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__run-img {
+    margin-right: 15px;
+    width: 32px;
+    height: 22px;
+  }
+
+  &__run-type-text {
+    width: 81%;
+    font-size: 12px;
+    color: black;
+  }
+
+  &__run-open {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &__run-open-text {
+    margin-right: 15px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+
+  &__run-open-panel-text {
+    margin-left: 3px;
+    font-size: 12px;
+    line-height: 19px;
+  }
+
+  &__run-panel-list {
+    display: none;
+    margin: 0 auto;
+    position: absolute;
+    top: 19px;
+    width: 320px;
+    height: 100px;
+    background-color: gray;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    &_expanded {
+      display: block;
+    }
+  }
+
+  &__run-panel-list-item {
+    
+  }
+
+  &__run-panel-open {
+    width: 200px;
+    height: 100px;
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  &__run-open-panel {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 320px;
+    border-radius: 2px;
+    background-color: white;
+    border: 1px solid #7f9db9;
+    padding-left: 2px;
+  }
+
+  &__run-button {
+    width: 18.5px;
+    height: 19px;
+    background: url("../../assets/img/run-btn.png");
+  }
+}
